@@ -4,12 +4,6 @@ import (
 	"fmt"
 	"github.com/jessevdk/go-flags"
 	"os"
-	"os/exec"
-	"path"
-	"regexp"
-	"strconv"
-	"strings"
-	"time"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
@@ -46,7 +40,9 @@ func main() {
 		Version bool `long:"version" description:"Show version information"`
 		ConfigFile string `short:"c" long:"config" description:"Show version information" default:"gantry.yml"`
 
-		Start StartCommand
+		Start gantry.StartCommand `long:"start"`
+		New gantry.StartCommand `long:"start"`
+		Deploy gantry.StartCommand `long:"start"`
 	}
 
 	argsWithoutProg, err := flags.ParseArgs(&opts, argsWithoutProg)
@@ -75,52 +71,4 @@ func main() {
 	fmt.Printf("git: %s\nregion:%s\n\n", conf.Vcs.GitHub, conf.Aws.Region)
 	os.Exit(0)
 
-
-	//data, err := Asset("circle")
-	//if err != nil {
-	//	// Asset was not found.
-	//}
-
-
-
-	if (opts.Version) {
-		fmt.Println("Gantry 1.4")
-		os.Exit(0)
-	}
-
-	if (len(argsWithoutProg) > 0) {
-
-		switch argsWithoutProg[0] {
-		case "start":
-			_start(argsWithoutProg[1:])
-			break
-		case "new":
-			_new(argsWithoutProg[1:])
-			break
-		case "deploy":
-			_deploy(argsWithoutProg[1:], conf)
-			break
-		}
-
-	}
-
-}
-func _deploy(args []string, config Config) {
-
-}
-
-
-
-
-func _start(args []string) {
-
-}
-
-
-func _new(args []string) {
-	switch args[0] {
-	case "symfony":
-
-		break;
-	}
 }

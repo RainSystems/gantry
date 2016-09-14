@@ -1,15 +1,12 @@
 package gantry
 
 import (
-	"github.com/docker/docker/api/types/filters"
 	"fmt"
-	"github.com/docker/docker/api/types"
+	"time"
 	"github.com/docker/docker/api/types/filters"
+	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
-	"github.com/docker/docker/pkg/stringutils"
 	"golang.org/x/net/context"
-
-
 )
 
 func getProjectRunning(project string) bool {

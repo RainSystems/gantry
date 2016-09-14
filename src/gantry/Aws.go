@@ -1,8 +1,8 @@
 package gantry
 
 import (
-	"github.com/aws/aws-sdk-go/aws/session"
 	"fmt"
+	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ecr"
 	"github.com/aws/aws-sdk-go/aws"
 

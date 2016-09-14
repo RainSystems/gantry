@@ -4,10 +4,15 @@ import (
 	"fmt"
 	"strings"
 	"os"
+	"os/exec"
 	"github.com/docker/docker/pkg/stringutils"
 )
 
-func StartCommand(args []string) {
+type StartCommand struct {
+	Env string `short:"e" long:"env" default:"prod"`
+}
+
+func (command *StartCommand) Execute(args []string) {
 	project := getProjectName()
 	if (getProjectRunning(project)) {
 		fmt.Printf("Restarting project: %s\n", project)
