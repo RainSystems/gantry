@@ -1,0 +1,11 @@
+project:
+  label: Gantry Go
+  name: gantry
+
+vcs:
+  github: https://github.com/Jason-Hendry/gantry-go.git
+
+aws:
+  credentials: aws/credentials # default ~/.aws/credentials
+  config: aws/config           # default ~/.aws/config
+  region: ap-southeast-2
