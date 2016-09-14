@@ -6,7 +6,7 @@ all: get bind
 	$(GO_OPTS) $(GO_BIN) build -o gantry src/gantry.go
 
 get:
-	cd src && $(GO_OPTS) $(GO_BIN) get -u github.com/jteeuwen/go-bindata/...
+#	cd src && $(GO_OPTS) $(GO_BIN) get -u github.com/jteeuwen/go-bindata/...
 	cd src && $(GO_OPTS) $(GO_BIN) get
 
 bind:

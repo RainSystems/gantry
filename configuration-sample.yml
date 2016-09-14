@@ -5,6 +5,9 @@ project:
 vcs:
   github: https://github.com/Jason-Hendry/gantry-go.git
 
+docker:
+  tag: rainsystems/gantry
+
 aws:
   credentials: aws/credentials # default ~/.aws/credentials
   config: aws/config           # default ~/.aws/config
