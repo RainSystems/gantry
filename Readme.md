@@ -3,8 +3,9 @@
 ## Roadmap
 
 ### New Project
-* [ ] Symfony
+* [ ] Symfony (MySQL/Postgres)
 * [ ] Wordpress
+* [ ] Cordova / Iconic / Phonegap
 * [ ] Select staging env
 * [ ] Select production env (ECS, GCP, Kubernetes etc)
 
@@ -19,9 +20,20 @@
 * [ ] Console
 * [ ] Console access to other containers eg gantry console api
 * [ ] Open in web
+* [ ] DB Tools (phpMyAdmin, mysql, psql)
+* [ ] Execute SQL on DB
+* [ ] Mock Email / SMS services for dev
 
-### DevOps
+### Ops
 * [ ] Config services like DB, Cache, Queue, Jobs
+* [ ] Backup DB (Prod, Staging, Dev)
+* [ ] Restore DB (Prod, Staging, Dev)
+* [ ] Sync DB Prod > Staging
+* [ ] Sanatize DB (Staging, Dev)
+
+### Build
+* [ ] Generate build configs (CircleCI, docker?)
+* [ ] OSX Build (CirclCI)
 
 ### Deployments
 * [ ] Simple Docker - Push to Repo (tag/latest), Pull on server, Scale up new image, Scale back old images (replicate existing process)
@@ -29,3 +41,23 @@
 * [ ] Kubernetes (GCP or hosted)
 * [ ] Google ?
 * [ ] Heroku ?
+
+### Docker command wrapper
+
+* [ ] AWS-Cli
+* [ ] composer (php)
+* [ ] npm
+* [ ] node
+* [ ] sass
+* [ ] cap ? 
+* [ ] ansible ? Maybe for provisions
+* [ ] behat ?
+* [ ] bower
+* [ ] gulp
+* [ ] cordova
+
+### Rapid Prototyping
+
+* [ ] Symfony Entity / Crud command wrapper
+* [ ] Symfony Migration tools
+* [ ] Symfony Create / Update users
