@@ -10,6 +10,7 @@
 * [ ] Cordova / Iconic / Phonegap
 * [ ] Select staging env
 * [ ] Select production env (ECS, GCP, Kubernetes etc)
+* [ ] Polyglot setups (Node + PHP + go + ...)
 
 ### Provisioning
 * [ ] Cloudflare
