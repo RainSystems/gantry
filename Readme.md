@@ -1,5 +1,7 @@
 # Gantry - Ported to go
 
+[Originally](https://github.com/Jason-Hendry/gantry) written in bash scripts this project aims to create a robust cross platform DevOps tools to bootstrap, build, deploy and manage a variable of web and mobile projects.
+
 ## Roadmap
 
 ### New Project
